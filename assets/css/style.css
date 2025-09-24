@@ -10,6 +10,7 @@ img {
 
 body {
     font-family: arial, sans serif;
+    height: 100vh;
 }
 
 /* debug */
@@ -28,14 +29,14 @@ body {
 
         .music {
             background-color: burlywood;
-            height: 650px;
+            height: 90vh;
             
             .grid {
                 width: 60%;
+                overflow-y: auto;
 
                 .card {
                     width: calc(100%/4 - 20px);
-                    height: 265px;
     
                     img {
                         width: 100%;
@@ -184,5 +185,42 @@ main {
             color: var(--band-text-contrast);
         }
     }
+
+    .music {
+            background-color: var(--band-primary);
+            height: 90vh;
+            
+            .grid {
+                width: 60%;
+                overflow-y: auto;
+
+                .card {
+                    width: calc(100%/4 - 20px);
+    
+                    img {
+                        width: 100%;
+                        border: 1px solid var(--band-secondary);
+                    }
+
+                    h4 {
+                        white-space: nowrap;
+                        height: 1rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: var(--band-text);
+                    }
+
+                    span {
+                        color: var(--band-text-contrast);
+                    }
+                }
+            }
+
+            .player {
+                background-color: crimson;
+                width: 35%;
+            }
+
+        }
 
 }
