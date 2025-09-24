@@ -30,14 +30,14 @@ body {
         .music {
             background-color: burlywood;
             height: 90vh;
-            
+
             .grid {
                 width: 60%;
                 overflow-y: auto;
 
                 .card {
                     padding: 1rem;
-    
+
                     img {
                         width: 100%;
                         border: 2px solid var(--band-secondary);
@@ -59,7 +59,7 @@ body {
 
         }
 
-        
+
     }
 }
 
@@ -161,66 +161,66 @@ header {
 main {
 
     .search_bg {
-        background-color: var(--band-main-search);
+        background-color: var(--band-secondary);
     }
 
-    .search {
+    .search_attributes {
         padding: 1rem 0;
 
         input {
             background-color: var(--band-header-search);
             color: var(--band-text-contrast);
-            border: none;
+            border: 1px solid;
             height: 36px;
             width: 300px;
             padding-left: 40px;
-            border-radius: 3px;
+            border-radius: 20px;
             font-size: 1rem;
         }
 
         i {
             position: absolute;
             left: 10px;
-            top: 25px;
+            top: 27px;
             color: var(--band-text-contrast);
         }
     }
 
     .music {
-            background-color: var(--band-primary);
-            height: 90vh;
-            
-            .grid {
-                width: 60%;
-                overflow-y: auto;
+        background-color: var(--band-primary);
+        height: 90vh;
 
-                .card {
-                    margin: auto;
-                    width: calc(100%/4 - 1rem);
-    
-                    img {
-                        border: 1px solid var(--band-secondary);
-                    }
+        .grid {
+            width: 60%;
+            overflow-y: auto;
 
-                    h4 {
-                        white-space: nowrap;
-                        height: 1rem;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        color: var(--band-text);
-                    }
+            .card {
+                margin: auto;
+                width: calc(100%/4 - 1rem);
 
-                    span {
-                        color: var(--band-text-contrast);
-                    }
+                img {
+                    border: 1px solid var(--band-secondary);
+                }
+
+                h4 {
+                    white-space: nowrap;
+                    height: 1rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: var(--band-text);
+                }
+
+                span {
+                    color: var(--band-text-contrast);
                 }
             }
-
-            .player {
-                background-color: crimson;
-                width: 35%;
-            }
-
         }
+
+        .player {
+            background-color: crimson;
+            width: 35%;
+        }
+
+    }
 
 }
