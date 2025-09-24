@@ -23,6 +23,15 @@ body {
     header {
         background-color: aqua;
     }
+
+    main {
+
+        .music {
+            background-color: burlywood;
+            height: 650px;
+
+        }
+    }
 }
 
 /* colors */
@@ -110,22 +119,30 @@ header {
 
 main {
 
-    input {
-        background-color: var(--band-header-search);
-        color: var(--band-text-contrast);
-        border: none;
-        height: 36px;
-        width: 300px;
-        padding-left: 40px;
-        border-radius: 3px;
-        font-size: 1rem;
+    .search_bg {
+        background-color: var(--band-main-search);
     }
 
-    i {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        color: var(--band-text-contrast);
+    .search {
+        padding: 1rem 0;
+
+        input {
+            background-color: var(--band-header-search);
+            color: var(--band-text-contrast);
+            border: none;
+            height: 36px;
+            width: 300px;
+            padding-left: 40px;
+            border-radius: 3px;
+            font-size: 1rem;
+        }
+
+        i {
+            position: absolute;
+            left: 10px;
+            top: 25px;
+            color: var(--band-text-contrast);
+        }
     }
 
 }
