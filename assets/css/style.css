@@ -36,11 +36,11 @@ body {
                 overflow-y: auto;
 
                 .card {
-                    width: calc(100%/4 - 20px);
+                    padding: 1rem;
     
                     img {
                         width: 100%;
-                        border: 1px solid var(--band-secondary);
+                        border: 2px solid var(--band-secondary);
                     }
 
                     h4 {
@@ -195,10 +195,10 @@ main {
                 overflow-y: auto;
 
                 .card {
-                    width: calc(100%/4 - 20px);
+                    margin: auto;
+                    width: calc(100%/4 - 1rem);
     
                     img {
-                        width: 100%;
                         border: 1px solid var(--band-secondary);
                     }
 
