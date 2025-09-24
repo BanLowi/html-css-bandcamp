@@ -29,8 +29,36 @@ body {
         .music {
             background-color: burlywood;
             height: 650px;
+            
+            .grid {
+                width: 60%;
+
+                .card {
+                    width: calc(100%/4 - 20px);
+                    height: 265px;
+    
+                    img {
+                        width: 100%;
+                        border: 1px solid var(--band-secondary);
+                    }
+
+                    h4 {
+                        white-space: nowrap;
+                        height: 1rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+            .player {
+                background-color: crimson;
+                width: 35%;
+            }
 
         }
+
+        
     }
 }
 
@@ -52,10 +80,22 @@ body {
     margin: auto;
 }
 
+.wrapper {
+    height: 100vh;
+}
+
 /* flex */
 
 .d-flex {
     display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
 }
 
 /* position */
