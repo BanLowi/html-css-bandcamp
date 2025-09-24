@@ -67,6 +67,10 @@ header {
 
         .left {
 
+            .logo {
+                padding-right: 50px;
+            }
+
             input {
                 background-color: var(--band-header-search);
                 color: var(--band-text-contrast);
