@@ -17,6 +17,15 @@
     }
 }
 
+/* colors */
+
+:root {
+    --band-primary: #222222;
+    --band-secondary: #2b2b2b;
+    --band-header-search: #464646;
+    --band-main-search: #3c3c3c;
+}
+
 /* container */
 
 .container {
@@ -24,15 +33,31 @@
     margin: auto;
 }
 
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
 /* header */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
+    background-color: var(--band-primary);
 
-    .left {
-        display: flex;
+    .container {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+
+        .left {
+            
+            input {
+                margin-left: 10px;
+            }
+        }
+
+        .right :last-child {
+            margin-left: 30px;
+        }
     }
 }
