@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: content-box;
 }
+
+/* debug */
+
+.debug {
+
+    * {
+        border: 1px dashed;
+    }
+
+    header {
+        background-color: aqua;
+    }
+}
+
+/* container */
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    .left {
+        display: flex;
+    }
+}
