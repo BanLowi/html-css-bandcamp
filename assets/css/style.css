@@ -104,6 +104,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 /* position */
 
 .relative {
@@ -194,11 +198,11 @@ main {
         height: 90vh;
         
         .grid {
-            width: 60%;
+            width: 70%;
             overflow-y: auto;
             padding-top: 1rem;
+            padding-right: 2rem;
             margin-left: -0.5rem;
-            
 
             .card {
                 margin: auto;
@@ -206,7 +210,7 @@ main {
                 padding-bottom: 1rem;
 
                 img {
-                    border: 1px solid var(--band-secondary);
+                    border: 3px solid var(--band-secondary);
                 }
 
                 p {
@@ -225,8 +229,31 @@ main {
         }
 
         .player {
-            background-color: crimson;
-            width: 35%;
+            width: 30%;
+            padding-left: 1.5rem;
+
+            img {
+                width: 100%;
+                margin-top: 1rem;
+                border: 3px solid var(--band-secondary);
+            }
+
+            .mini_player {
+                margin-top: 3rem;
+
+                i {
+                    color: var(--band-text);
+                    font-size: 66px;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    color: var(--band-text);
+                    margin-left: 1rem;
+                }
+            }
         }
 
     }
