@@ -10,7 +10,6 @@ img {
 
 body {
     font-family: arial, sans serif;
-    height: 100vh;
 }
 
 /* colors */
@@ -33,10 +32,6 @@ body {
     margin: auto;
 }
 
-.wrapper {
-    height: 100vh;
-}
-
 .search_bg {
     background-color: var(--band-secondary);
 }
@@ -54,6 +49,10 @@ body {
 
 .between {
     justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
 }
 
 .justify-center {
@@ -149,13 +148,13 @@ main {
     }
 
     .music {
-        height: 100vh;
+        height: 90vh;
 
         .grid {
             width: 70%;
             overflow-y: auto;
             padding-top: 1rem;
-            padding-right: 2rem;
+            padding-right: 1.5rem;
             margin-left: -0.5rem;
 
             .card {
@@ -205,12 +204,14 @@ main {
         }
 
         .player {
+            margin-top: 1rem;
+            overflow-y: auto;
             width: 30%;
-            padding-left: 1.5rem;
+            padding: 0 1.5rem;
+            border-left: 3px solid var(--band-secondary);
 
             img {
                 width: 100%;
-                margin-top: 1rem;
                 border: 3px solid var(--band-secondary);
             }
 
@@ -256,9 +257,38 @@ main {
 
             }
 
-            .tracks {
+            .album_info {
                 color: var(--band-text);
                 padding-top: 3rem;
+                line-height: 1.5rem;
+            }
+
+            .author {
+                margin-top: 2rem;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 66px;
+                }
+
+                .info {
+                    color: var(--band-text);
+                    margin: auto 0;
+                    line-height: 1.5rem;
+                    padding-left: 1rem;
+                }
+
+                button {
+                    align-items: flex-end;
+                    width: 20%;
+                    height: 45px;
+                    font-size: 1.1rem;
+                    background-color: var(--band-primary);
+                    color: white;
+                    border: 1px solid var(--band-text);
+                    border-radius: 5px;
+                }
             }
         }
     }
