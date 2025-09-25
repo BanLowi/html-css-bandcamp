@@ -10,6 +10,7 @@ img {
 
 body {
     font-family: arial, sans serif;
+    height: 100vh;
 }
 
 /* colors */
@@ -69,6 +70,7 @@ body {
 
 header {
     background-color: var(--band-primary);
+    height: 50px;
 
     .container {
         align-items: center;
@@ -127,6 +129,8 @@ header {
 
 main {
     background-color: var(--band-primary);
+    height: calc(100vh - 50px);
+
 
     .search_attributes {
         padding: 1rem 0;
@@ -152,15 +156,17 @@ main {
     }
 
     .music {
-        height: 90vh;
+        height: 90%;
 
         .grid {
             width: 70%;
+            overflow: hidden;
             overflow-y: auto;
             padding-top: 1rem;
             padding-right: 1.5rem;
             margin-left: -0.5rem;
-
+            height: 100%;
+            
             .card {
                 margin: auto;
                 width: calc(100%/4 - 1rem);
@@ -213,6 +219,7 @@ main {
             width: 30%;
             padding: 0 1.5rem;
             border-left: 3px solid var(--band-secondary);
+            height: 100%;
 
             img {
                 width: 100%;
