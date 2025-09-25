@@ -15,11 +15,17 @@
             height: 90vh;
 
             .grid {
-                width: 60%;
+                width: 70%;
                 overflow-y: auto;
+                padding-top: 1rem;
+                padding-right: 1.5rem;
+                margin-left: -0.6rem;
 
                 .card {
-                    padding: 1rem;
+                    margin: auto;
+                    width: calc(100%/4 - 1rem);
+                    padding-bottom: 1rem;
+
 
                     img {
                         width: 100%;
@@ -44,4 +50,112 @@
 
 
     }
+
+    @media screen and (max-width: 744px) {
+    main {
+
+        .music {
+
+            .grid {
+
+                .card {
+                    width: calc(100%/2 - 1rem);
+                }
+            }
+
+            .player {
+
+                .mini_player {
+
+                    .info {
+
+                        p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .author {
+                    display: block;
+
+                    button {
+                        width: 100%;
+                        margin-top: 1rem;
+                    }
+                }
+
+                .comma {
+                    display: none;
+                }
+
+                .quote {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+
+        .container {
+            padding: 0;
+
+            .left {
+
+                .logo {
+                padding-right: 0px;
+                }
+
+                .logo :first-child {
+                display: none;
+                }
+
+                .logo :last-child {
+                display: block;
+                }
+
+                .search {
+                    
+                    input {
+                        display: none;
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    main {
+
+        .search_attributes {
+
+            input {
+                width: 520px;
+            }
+        }
+
+        .music {
+
+            .grid {
+                width: 100%;
+                padding-right: 0;
+                margin-left: -0.5rem 0;
+            }
+
+            .player {
+                display: none;
+            }
+        }
+    }
+}
 }

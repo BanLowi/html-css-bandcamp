@@ -84,12 +84,19 @@
     
     main {
 
+        .search_attributes {
+            
+            input {
+                width: 90%;
+            }
+        }
+
         .music {
 
             .grid {
                 width: 100%;
                 padding-right: 0;
-                margin-left: 0;
+                margin-left: -0.5rem 0;
             }
 
             .player {

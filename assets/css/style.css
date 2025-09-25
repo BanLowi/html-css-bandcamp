@@ -28,7 +28,7 @@ body {
 /* container */
 
 .container {
-    width: 95%;
+    max-width: 95%;
     margin: auto;
 }
 
@@ -79,6 +79,10 @@ header {
 
             .logo {
                 padding-right: 50px;
+            }
+
+            .logo :last-child {
+                display: none;
             }
 
             input {
