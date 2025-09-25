@@ -162,8 +162,26 @@ main {
                 width: calc(100%/4 - 1rem);
                 padding-bottom: 1rem;
 
-                img {
+                .image {
                     border: 3px solid var(--band-secondary);
+                    position: relative;
+
+                    a {
+                        font-size: 30px;
+                        position: absolute;
+                        left: 10px;
+                        bottom: 10px;
+                        color: var(--band-primary);
+                        display: none;
+                    }
+                }
+
+                .image:hover {
+                    border: none;
+
+                    a {
+                        display: block;
+                    }
                 }
 
                 p {
