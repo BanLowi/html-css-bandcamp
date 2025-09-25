@@ -1,5 +1,6 @@
 @media screen and (max-width: 744px) {
     main {
+
         .music {
 
             .grid {
@@ -45,4 +46,55 @@
     }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+
+    header {
+
+        .container {
+            padding: 0;
+
+            .left {
+
+                .logo {
+                padding-right: 0px;
+                }
+
+                .logo :first-child {
+                display: none;
+                }
+
+                .logo :last-child {
+                display: block;
+                }
+
+                .search {
+                    
+                    input {
+                        display: none;
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    main {
+
+        .music {
+
+            .grid {
+                width: 100%;
+                padding-right: 0;
+                margin-left: 0;
+            }
+
+            .player {
+                display: none;
+            }
+        }
+    }
+}
