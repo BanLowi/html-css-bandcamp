@@ -22,6 +22,7 @@ body {
     --band-main-search: #3c3c3c;
     --band-text-contrast: #919191;
     --band-text: white;
+    --band-header-hover: #7c7a7a;
 }
 
 /* container */
@@ -107,11 +108,13 @@ header {
             a {
                 text-decoration: none;
                 color: var(--band-text);
+                padding: 1rem;
             }
-        }
 
-        .right :last-child {
-            margin-left: 30px;
+            a:hover {
+                text-decoration: underline;
+                background-color: var(--band-header-hover);
+            }
         }
     }
 }
