@@ -3,9 +3,42 @@
         .music {
 
             .grid {
-                
+
                 .card {
                     width: calc(100%/2 - 1rem);
+                }
+            }
+
+            .player {
+
+                .mini_player {
+
+                    .info {
+
+                        p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .author {
+                    display: block;
+
+                    button {
+                        width: 100%;
+                        margin-top: 1rem;
+                    }
+                }
+
+                .comma {
+                    display: none;
+                }
+
+                .quote {
+                    display: none;
                 }
             }
         }
