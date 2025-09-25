@@ -85,6 +85,11 @@ body {
     height: 100vh;
 }
 
+.search_bg {
+    background-color: var(--band-secondary);
+}
+
+
 /* flex */
 
 .d-flex {
@@ -160,10 +165,6 @@ header {
 
 main {
 
-    .search_bg {
-        background-color: var(--band-secondary);
-    }
-
     .search_attributes {
         padding: 1rem 0;
 
@@ -189,7 +190,7 @@ main {
     .music {
         background-color: var(--band-primary);
         height: 90vh;
-
+        
         .grid {
             width: 60%;
             overflow-y: auto;
@@ -202,7 +203,7 @@ main {
                     border: 1px solid var(--band-secondary);
                 }
 
-                h4 {
+                p {
                     white-space: nowrap;
                     height: 1rem;
                     overflow: hidden;
