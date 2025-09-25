@@ -201,6 +201,7 @@ main {
             .card {
                 margin: auto;
                 width: calc(100%/4 - 1rem);
+                padding-bottom: 1rem;
 
                 img {
                     border: 1px solid var(--band-secondary);
@@ -212,6 +213,7 @@ main {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     color: var(--band-text);
+                    margin: 0.5rem 0;
                 }
 
                 span {
