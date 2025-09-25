@@ -13,56 +13,6 @@ body {
     height: 100vh;
 }
 
-/* debug */
-
-.debug {
-
-    * {
-        border: 1px dashed;
-    }
-
-    header {
-        background-color: aqua;
-    }
-
-    main {
-
-        .music {
-            background-color: burlywood;
-            height: 90vh;
-
-            .grid {
-                width: 60%;
-                overflow-y: auto;
-
-                .card {
-                    padding: 1rem;
-
-                    img {
-                        width: 100%;
-                        border: 2px solid var(--band-secondary);
-                    }
-
-                    h4 {
-                        white-space: nowrap;
-                        height: 1rem;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                }
-            }
-
-            .player {
-                background-color: crimson;
-                width: 35%;
-            }
-
-        }
-
-
-    }
-}
-
 /* colors */
 
 :root {
