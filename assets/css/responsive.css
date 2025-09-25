@@ -79,6 +79,12 @@
                     }
                 }
             }
+
+            .right {
+                a {
+                    padding: 0.5rem;
+                }
+            }
         }
     }
     
@@ -87,7 +93,7 @@
         .search_attributes {
             
             input {
-                width: 90%;
+                width: 520px;
             }
         }
 
