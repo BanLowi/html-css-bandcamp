@@ -290,6 +290,17 @@ main {
                     border-radius: 5px;
                 }
             }
+
+            .comma {
+                color: var(--band-text);
+                font-size: 40px;
+                margin-top: 2rem;
+            }
+
+            .quote {
+                color: var(--band-text);
+                line-height: 1.5rem;
+            }
         }
     }
 }
