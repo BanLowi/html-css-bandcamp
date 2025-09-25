@@ -164,6 +164,7 @@ header {
 /* main */
 
 main {
+    background-color: var(--band-primary);
 
     .search_attributes {
         padding: 1rem 0;
@@ -188,12 +189,14 @@ main {
     }
 
     .music {
-        background-color: var(--band-primary);
         height: 90vh;
         
         .grid {
             width: 60%;
             overflow-y: auto;
+            padding-top: 1rem;
+            margin-left: -0.5rem;
+            
 
             .card {
                 margin: auto;
