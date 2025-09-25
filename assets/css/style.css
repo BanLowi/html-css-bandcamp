@@ -242,6 +242,11 @@ main {
                     border-radius: 5px;
                 }
 
+                button:hover {
+                    opacity: 0.8;
+                    text-decoration: underline;
+                }
+
                 .btn_wl {
                     margin-top: 1rem;
                     background-color: var(--band-primary);
