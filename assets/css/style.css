@@ -135,6 +135,7 @@ header {
                 padding-left: 40px;
                 border-radius: 3px;
                 font-size: 1rem;
+                cursor: pointer;
             }
 
             i {
@@ -178,6 +179,7 @@ main {
             padding-left: 40px;
             border-radius: 20px;
             font-size: 1rem;
+            cursor: pointer;
         }
 
         i {
